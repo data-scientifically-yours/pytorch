@@ -7,13 +7,12 @@ PyTorch is a Python package that provides two high-level features:
 - Deep neural networks built on a tape-based autograd system
 
 - [Creating a GPU enabled VM Instance From GCP](#Creating-a-GPU-enabled-VM-Instance-From-GCP)
-- [Installing Nvidia Driver](#Installing-Nvidia-Driver)
-- [Installing Conda](#Installing-Conda)
-- [Build From Source](#installation-from-source)
+- [Install Nvidia Driver](#Install-Nvidia-Driver)
+- [Install Conda](#Install-Conda)
+- [Build From Source](#Build-From-Source)
   - [With CUDA](#)
   - [Without CUDA (CPU-only)](#)
   - [Verify your installation](#)
-- [Getting Started](#getting-started)
 
 ## Creating a GPU enabled VM Instance From GCP
 
@@ -24,7 +23,7 @@ gcloud config set project "$PROJECT"
 gcloud beta compute --project="$PROJECT" instances create pytorch-rebuild --zone="$ZONE" --machine-type=n1-standard-4 --subnet=default --network-tier=PREMIUM --maintenance-policy=TERMINATE --scopes=https://www.googleapis.com/auth/cloud-platform --accelerator=type=nvidia-tesla-k80,count=1 --tags=http-server,https-server --image=ubuntu-minimal-1804-bionic-v20190814 --image-project=ubuntu-os-cloud --boot-disk-size=30GB --boot-disk-type=pd-standard --boot-disk-device-name=pytorch-rebuild --reservation-affinity=any
 ```
 
-## Installing Nvidia Driver
+## Install Nvidia Driver
 
 ```bash
 wget http://us.download.nvidia.com/tesla/418.87/nvidia-driver-local-repo-ubuntu1804-418.87.00_1.0-1_amd64.deb
@@ -36,7 +35,7 @@ sudo reboot
 nvidia-smi
 ```
 
-## Installing Conda
+## Install Conda
 
 ```bash
 cd /tmp
