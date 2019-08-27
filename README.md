@@ -1,4 +1,4 @@
-![PyTorch Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPgUNl5UNVrVbYGZhZCK_fKeJ7mM2n6d3ma31U7QyKzaW0qXQQ)
+![PyTorch Logo](https://ibb.co/x192P5s)
 
 --------------------------------------------------------------------------------
 
