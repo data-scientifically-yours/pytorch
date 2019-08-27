@@ -36,6 +36,9 @@ nvidia-smi
 
 ## Install Conda
 
+When building anything, it’s safer to do it in a conda environment lest you mess 
+up and pollute your system environment. 
+
 ```bash
 cd /tmp
 curl -O https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
@@ -55,14 +58,13 @@ Note: at the time of writing, the latest Python is 3.7.3 and NumPy 1.16.3. Feel 
 As of writing, PyTorch officially supports CUDA up to 10.0 unless PyTorch 
 adds MAGMA support for CUDA 10.1 (i.e. when this package becomes available).
 
-When building anything, it’s safer to do it in a conda environment lest you mess 
-up and pollute your system environment. Let’s first install the prerequisite packages.
+Let’s first install the prerequisite packages.
 Make sure you are using this environment for the rest of the article.
 
 ```bash
 conda create --name pytorch-build python=3.7.3 numpy=1.16.3
-conda activate pytorch-build # or `source activate pytorch-build`
-conda install numpy pyyaml mkl mkl-include setuptools cmake cffi \ typing
+conda activate pytorch-build
+conda install numpy pyyaml mkl mkl-include setuptools cmake cffi typing
 conda install -c pytorch magma-cuda100
 ```
 
