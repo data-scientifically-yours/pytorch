@@ -1,4 +1,4 @@
-![PyTorch Logo](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/pytorch-logo-dark.png)
+![PyTorch Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8DfJ2ljSphd0XEsPwYxYxyOPN8pAC-sf3ggWY1sEmXbmJr6faw)
 
 --------------------------------------------------------------------------------
 
