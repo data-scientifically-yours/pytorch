@@ -1,4 +1,4 @@
-![PyTorch Logo](https://ibb.co/x192P5s)
+![PyTorch Logo](https://i.ibb.co/7nMS8yz/nvidia-pytorch.png)
 
 --------------------------------------------------------------------------------
 
