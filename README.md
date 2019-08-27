@@ -1,6 +1,6 @@
 ![PyTorch Logo](https://i.ibb.co/7nMS8yz/nvidia-pytorch.png)
 
---------------------------------------------------------------------------------
+_______________________________________________________________________________________________
 
 PyTorch is a Python package that provides two high-level features:
 - Tensor computation (like NumPy) with strong GPU acceleration
