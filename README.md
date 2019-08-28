@@ -5,7 +5,15 @@ PyTorch is a Python package that provides two high-level features:
 - Tensor computation (like NumPy) with strong GPU acceleration
 - Deep neural networks built on a tape-based autograd system
 
-- [Creating a GPU enabled VM Instance From GCP](#Creating-a-GPU-enabled-VM-Instance-From-GCP)
+### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/gce.png" width="40" height="40" align="center"/> GPU on GCE Nvidia enabled VM
+
+$ wget https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/gcs/gcp_vm_instantiation.sh && bash gcp_vm_instantiation.sh
+
+
+### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/nvidia.png" width="40" height="40" align="center"/> Nvidia driver
+
+$ wget -O - -q "https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/bash/install-nvidia.sh" | bash
+
 - [Install Nvidia Driver](#Install-Nvidia-Driver)
 - [Install Conda](#Install-Conda)
 - [Build From Source](#Build-From-Source)
@@ -13,26 +21,6 @@ PyTorch is a Python package that provides two high-level features:
   - [Without CUDA (CPU-only)](#)
   - [Verify your installation](#)
 
-## Creating a GPU enabled VM Instance From GCP
-
-```bash
-export PROJECT='YOUR_PROJECT'
-export ZONE='us-central1-a'
-gcloud config set project "$PROJECT"
-gcloud beta compute --project="$PROJECT" instances create pytorch-rebuild --zone="$ZONE" --machine-type=n1-standard-4 --subnet=default --network-tier=PREMIUM --maintenance-policy=TERMINATE --scopes=https://www.googleapis.com/auth/cloud-platform --accelerator=type=nvidia-tesla-k80,count=1 --tags=http-server,https-server --image=ubuntu-minimal-1804-bionic-v20190814 --image-project=ubuntu-os-cloud --boot-disk-size=30GB --boot-disk-type=pd-standard --boot-disk-device-name=pytorch-rebuild --reservation-affinity=any
-```
-
-## Install Nvidia Driver
-
-```bash
-wget http://us.download.nvidia.com/tesla/418.87/nvidia-driver-local-repo-ubuntu1804-418.87.00_1.0-1_amd64.deb
-sudo apt-key add /var/nvidia-driver-local-repo-418.87.00/7fa2af80.pub
-sudo dpkg -i nvidia-driver-local-repo-ubuntu1804-418.87.00_1.0-1_amd64.deb
-sudo apt-get update
-sudo apt-get install cuda-drivers
-sudo reboot
-nvidia-smi
-```
 
 ## Install Conda
 
