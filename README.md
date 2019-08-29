@@ -15,9 +15,7 @@ PyTorch is a Python package that provides two high-level features:
 ## Prerequisites
 
 #### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/gce.png" width="30" height="30" align="center"/> Instantiate a GPU on GCE Nvidia enabled VM
-  
-  [![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/data-scientifically-yours/pytorch.git&tutorial=tutorial.md)
-    
+  For the previous step we will need a GCP account. It’s [free](# https://cloud.google.com/free/).
   $ wget https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/gcs/gcp_vm_instantiation.sh && bash gcp_vm_instantiation.sh
 
 #### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/nvidia.png" width="40" height="40" align="center"/> Install Nvidia Driver
