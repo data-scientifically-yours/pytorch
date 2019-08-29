@@ -39,7 +39,7 @@ Still under the pytorch-build environment, let’s run some examples to make sur
 
 Build the torchvision library from source.
 ```bash
-cd ~ && git https://github.com/pytorch/vision.git && ~/python setup.py install
+cd ~ && git https://github.com/pytorch/vision.git && python ~/setup.py install
 ```
 
 Install tqdm (a dependency for downloading torchvision datasets) with pip in order to run the MNIST example. 
@@ -51,7 +51,7 @@ pip install tqdm
 Now download the examples and run MNIST:
 
 ```bash
-cd ~ && git clone https://github.com/pytorch/examples.git && cd examples/mnist/python main.py
+cd ~ && git clone https://github.com/pytorch/examples.git && /examples/mnist/python/main.py
 ```
 
 Voilà!!!
