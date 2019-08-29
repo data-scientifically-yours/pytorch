@@ -4,9 +4,9 @@ PyTorch is a Python package that provides two high-level features:
 - Deep neural networks built on a tape-based autograd system
 
 - [Prerequisite](#Prerequisite)
-  - [GPU on GCE Nvidia enabled VM](#GPU on GCE Nvidia enabled VM)
+  - [GPU on GCE Nvidia enabled VM](#GPU-on-GCE-Nvidia-enabled-VM)
   - [Install Nvidia Driver](#Install-Nvidia-Driver)
-  - [Install Conda](#Install-Conda)
+  - [Install Anaconda](#Install-Anaconda)
 - [Build From Source](#Build-From-Source)
   - [With Cuda](#With-Cuda)
   - [CPU Only](#CPU-Only)
@@ -17,7 +17,7 @@ PyTorch is a Python package that provides two high-level features:
 #### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/gce.png" width="30" height="30" align="center"/> Instantiate a GPU on GCE Nvidia enabled VM
   $ wget https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/gcs/gcp_vm_instantiation.sh && bash gcp_vm_instantiation.sh
 
-#### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/nvidia.png" width="40" height="40" align="center"/> Install Nvidia driver
+#### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/nvidia.png" width="40" height="40" align="center"/> Install Nvidia Driver
   $ wget -O - -q "https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/bash/install-nvidia.sh" | bash
 
 #### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/anaconda.png" width="30" height="30" align="center"/> Install Anaconda
