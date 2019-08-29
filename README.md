@@ -27,7 +27,7 @@ up and pollute your system environment.
 
 ## Build From Source
 
-#### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/cuda.png" width="30" height="30" align="center"/> With Cuda
+#### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/cudnn.png" width="30" height="30" align="center"/> With Cuda
   $ wget https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/bash/build-pytorch.sh && bash build-pytorch.sh cuda
   
 #### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/cpu.png" width="30" height="30" align="center"/> CPU Only
