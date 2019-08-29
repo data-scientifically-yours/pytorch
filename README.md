@@ -35,12 +35,26 @@ up and pollute your system environment.
   
 ## Verify your installation
 
+Still under the pytorch-build environment, let’s run some examples to make sure your installation is correct.
 
+Build the torchvision library from source.
+```bash
+cd ~ && git https://github.com/pytorch/vision.git && ~/python setup.py install
+```
 
+Install tqdm (a dependency for downloading torchvision datasets) with pip in order to run the MNIST example. 
+
+```bash
+pip install tqdm
+```
+
+Now download the examples and run MNIST:
+
+```bash
+cd ~ && git clone https://github.com/pytorch/examples.git && cd examples/mnist/python main.py
+```
 
 Voilà!!!
 
-
 ## License
-
 PyTorch is BSD-style licensed, as found in the LICENSE file.
