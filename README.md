@@ -5,35 +5,34 @@ PyTorch is a Python package that provides two high-level features:
 - Tensor computation (like NumPy) with strong GPU acceleration
 - Deep neural networks built on a tape-based autograd system
 
-### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/gce.png" width="30" height="30" align="center"/> GPU on GCE Nvidia enabled VM
-> #####   $ wget https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/gcs/gcp_vm_instantiation.sh && bash gcp_vm_instantiation.sh
-
-
-### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/nvidia.png" width="40" height="40" align="center"/> Nvidia driver
-> #####   $ wget -O - -q "https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/bash/install-nvidia.sh" | bash
-
-
-- [Install Nvidia Driver](#Install-Nvidia-Driver)
-- [Install Conda](#Install-Conda)
+- [Prequisites](#Prequisites)
+  - [GPU on GCE Nvidia enabled VM](#GPU on GCE Nvidia enabled VM)
+  - [Install Nvidia Driver](#Install-Nvidia-Driver)
+  - [Install Conda](#Install-Conda)
 - [Build From Source](#Build-From-Source)
   - [With CUDA](#)
   - [Without CUDA (CPU-only)](#)
   - [Verify your installation](#)
 
+### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/gce.png" width="30" height="30" align="center"/> GPU on GCE Nvidia enabled VM
+#####   $ wget https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/gcs/gcp_vm_instantiation.sh && bash gcp_vm_instantiation.sh
 
-## Install Conda
 
+### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/nvidia.png" width="40" height="40" align="center"/> Nvidia driver
+#####   $ wget -O - -q "https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/bash/install-nvidia.sh" | bash
+
+
+### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/anaconda.png" width="30" height="30" align="center"/> Ancanoda
 When building anything, it’s safer to do it in a conda environment lest you mess 
 up and pollute your system environment. 
+#####   $ wget -O - -q 'https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/bash/install-anaconda.sh' | bash
 
-```bash
-cd /tmp
-curl -O https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
-sha256sum Anaconda3-2019.07-Linux-x86_64.sh
-bash Anaconda3-2019.07-Linux-x86_64.sh
-source ~/.bashrc
-conda list
-```
+
+
+
+
+
+
 
 ## Build From Source
 
