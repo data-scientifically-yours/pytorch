@@ -19,6 +19,9 @@ PyTorch is a Python package that provides two high-level features:
   
   $ wget https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/gcs/gcp_vm_instantiation.sh && bash gcp_vm_instantiation.sh
 
+Once the VM has been deployed, we can login into it from Google Cloud Shell:
+  $ gcloud compute --project $PROJECT_ID ssh --zone $ZONE $MACHINE_NAME
+
 #### <img src="https://raw.githubusercontent.com/data-scientifically-yours/resources/master/icones/nvidia.png" width="40" height="40" align="center"/> Install Nvidia Driver
   $ wget -O - -q "https://raw.githubusercontent.com/makramjandar/AwesomeScripts/master/bash/install-nvidia.sh" | bash
 
